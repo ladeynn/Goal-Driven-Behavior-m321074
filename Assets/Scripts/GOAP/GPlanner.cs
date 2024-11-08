@@ -30,7 +30,7 @@ public class GPlanner
             if (a.IsAchievable()) { usableActions.Add(a); }
         }
         List<Node> leaves = new List<Node>();
-        Node start = new Node(null, 0, GWorld.Instance.GetWorld().GetStatates(), null);
+        Node start = new Node(null, 0, GWorld.Instance.GetWorld().GetStates(), null);
 
         bool success = BuildGraph(start, leaves, usableActions, goal);
 

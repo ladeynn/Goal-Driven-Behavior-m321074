@@ -49,5 +49,5 @@ public class WorldStates
         else { states.Add(key, value); }
     }
 
-    public Dictionary<string, int> GetStatates() { return states; }
+    public Dictionary<string, int> GetStates() { return states; }
 }
