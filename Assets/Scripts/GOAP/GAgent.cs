@@ -47,7 +47,7 @@ public class GAgent : MonoBehaviour
     {
         if (currentAction != null && currentAction.running)
         {
-            if (currentAction.agent.hasPath && currentAction.agent.remainingDistance < 1f)
+            if (currentAction.agent.hasPath && currentAction.agent.remainingDistance < 2f) //currentAction.agent.remainingDistance < 0.5f
             {
                 if (!invoked)
                 {
