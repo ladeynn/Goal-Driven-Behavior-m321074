@@ -19,6 +19,8 @@ public sealed class GWorld
         foreach (GameObject c in cubes) { cubicles.Enqueue(c); }
 
         if (cubes.Length > 0) { world.ModifyState("FreeCubicle", cubes.Length);  }
+
+        Time.timeScale = 5.0f;
     }
 
     private GWorld()
