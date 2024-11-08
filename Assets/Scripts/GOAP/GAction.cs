@@ -20,6 +20,8 @@ public abstract class GAction : MonoBehaviour
 
     public WorldStates angentBeliefs;
 
+    public GInventory inventory;
+
     public bool running = false;
 
     public GAction() 
@@ -40,12 +42,13 @@ public abstract class GAction : MonoBehaviour
             }
         }
        if (afterEffects != null)
-        {
+       {
             foreach (WorldState w in afterEffects)
             {
                 effects.Add(w.key, w.value);
             }
-        }
+       }
+        inventory = this.GetComponent<GAgent>().inventory;
     }
 
     public bool IsAchievable()
